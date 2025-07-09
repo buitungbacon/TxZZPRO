@@ -923,7 +923,6 @@ def main():
             accounts = [line for line in file if line.strip()]
         print(Fore.CYAN + Style.BRIGHT + f"Đã đọc {len(accounts)} tài khoản từ file {input_file}:")
         for i, line in enumerate(accounts, 1):
-            print(line)
             username = line.split(':', 1)[0]
             print(Fore.GREEN + Style.BRIGHT + f"Dòng {i}: Tài khoản {username}")
             xyz.append(username)
